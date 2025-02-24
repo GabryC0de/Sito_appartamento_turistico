@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  let files = [];
-
   const jsonData = async () => {
     const response = await fetch('http://localhost:3000/get-filenames');
     const data = await response.json();
@@ -46,17 +44,5 @@ document.addEventListener('DOMContentLoaded', () => {
       let items = document.querySelectorAll('.item');
       document.querySelector('.slide').prepend(items[items.length - 1]);
     });
-
-
-
-
-
-
-
-
-
-
-
-
   });
 });
