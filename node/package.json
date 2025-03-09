@@ -17,6 +17,8 @@
     "fs": "^0.0.1-security",
     "openweather-apis": "^4.5.0",
     "path": "^0.12.7",
-    "tippy": "^0.0.0"
+    "tippy": "^0.0.0",
+    "@lottiefiles/dotlottie-web": "^0.41.0",
+    "bootstrap-icons": "^1.11.3"
   }
 }

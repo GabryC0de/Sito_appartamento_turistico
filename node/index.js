@@ -4,17 +4,13 @@ const path = require('path');
 const cors = require('cors');
 const app = express();
 
-const { getCoordinates, getWeather } = require("./main");
+app.use(cors());
+app.use(express.static(path.join(__dirname, '..')));
 
-app.use(cors({
-  origin: 'http://127.0.0.1:5500', // front-end port
-  credentials: true
-}));
+const { getCoordinates, getWeather } = require("./weatherAPI");
 
 // const folderPath = './Immagini sito';
 const folderPath = path.join(__dirname, '../Immagini sito');
-
-console.log(folderPath);
 
 app.get('/get-filenames', (req, res) => {
   fs.readdir(folderPath, (err, files) => {
@@ -22,7 +18,6 @@ app.get('/get-filenames', (req, res) => {
       return res.status(500).json({ error: 'Error reading folder' });
     }
     res.json({ files });
-    // console.log(files);
   });
 });
 
@@ -39,12 +34,13 @@ app.get('/weather-request', async (req, res) => {
   res.json({
     city,
     coordinates: coords,
-    weather
+    weather: weather.instant,
+    forecast: weather.next_1_hours
   });
 });
 
 const PORT = 3000;
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });

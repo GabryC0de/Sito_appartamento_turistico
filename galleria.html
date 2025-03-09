@@ -1,64 +1,90 @@
-<!DOCTYPE html>
-<!DOCTYPE html>
+<!doctype html>
+<!doctype html>
 <html lang="it">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Galleria</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="galleria.css" />
+        <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galleria</title>
-    <link rel="stylesheet" href="galleria.css">
-</head>
-
-<body>
-    <header>
-        <div class="logo-container">
-            <a href="index.html"><img class="logo" src="./Immagini sito/logo.png" alt="cont"></a>
-        </div>
-        <div class="info-wrapper">
-            <div class="info-icons">
-                <i class="fa-regular fa-envelope"></i>
-                <i class="fa-solid fa-phone"></i>
-                <a href="galleria.html" title="Link per immagini">
-                    <i class="fa-regular fa-images"></i>
+    <body>
+        <header>
+            <div id="header-content">
+                <a href="index.html">
+                    <div class="logo-container">
+                        <img class="logo" src="./logo.png" alt="cont">
+                    </div>
                 </a>
-            </div>
-        </div>
-    </header>
+                <div id="weather-container">
+                    <div id="weather-icon-container">
+                        <img id="weather-icon" src="" alt="cont">
+                    </div>
 
-    <div class="cont">
-        <div class="soggiorno">
-            <div class="sottotitolo">
-                <h3 class="Titoli-foto">Soggiorno</h3>
-            </div>
-            <div class="immagini"></div>
-        </div>
-        <div class="cucina">
-            <div class="sottotitolo">
-                <h3 class="Titoli-foto">Cucina</h3>
-            </div>
-            <div class="immagini"></div>
-        </div>
-        <div class="camere">
-            <div class="sottotitolo">
-                <h3 class="Titoli-foto">Camere</h3>
-            </div>
-            <div class="immagini"></div>
-        </div>
-        <div class="bagno">
-            <div class="sottotitolo">
-                <h3 class="Titoli-foto">Bagno</h3>
-            </div>
-            <div class="immagini"></div>
-        </div>
-        <div class="esterno">
-            <div class="sottotitolo">
-                <h3 class="Titoli-foto">Esterno</h3>
-            </div>
-            <div class="immagini"></div>
-        </div>
-    </div>
+                    <div id="temp-container">
+                        <h3 id="temp-text">
 
-    <script type="module" src="galleria.js"></script>
-</body>
+                        </h3>
+                    </div>
+                </div>
 
+                <div class="info-wrapper">
+                    <div class="info-icons">
+                        <img src="./icone/telephone_7044644 (1).png" alt="Numero di telefono" id="phone-icon" class="top-right-icons">
+                        <a id="email" href="mailto:ViaVerdi2021@gmail.com" class="top-right-icons">
+                            <img src="./icone/gmail.png" alt="e-mail" id="mail-icon">
+                        </a>
+                        <a id="gallery" href="galleria.html" class="top-right-icons">
+                            <img src="./icone/apple.png" alt="Galleria" id="gallery-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="cont">
+            <div class="soggiorno">
+                <div class="sottotitolo">
+                    <h3 class="Titoli-foto">Soggiorno</h3>
+                </div>
+                <div class="immagini"></div>
+            </div>
+            <div class="cucina">
+                <div class="sottotitolo">
+                    <h3 class="Titoli-foto">Cucina</h3>
+                </div>
+                <div class="immagini"></div>
+            </div>
+            <div class="camere">
+                <div class="sottotitolo">
+                    <h3 class="Titoli-foto">Camere</h3>
+                </div>
+                <div class="immagini"></div>
+            </div>
+            <div class="bagno">
+                <div class="sottotitolo">
+                    <h3 class="Titoli-foto">Bagno</h3>
+                </div>
+                <div class="immagini"></div>
+            </div>
+            <div class="esterno">
+                <div class="sottotitolo">
+                    <h3 class="Titoli-foto">Esterno</h3>
+                </div>
+                <div class="immagini"></div>
+            </div>
+        </div>
+
+        <script type="module" src="galleria.js"></script>
+        <script src="./jsFiles/galleria.js"></script>
+    </body>
 </html>

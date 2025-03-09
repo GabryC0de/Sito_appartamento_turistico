@@ -4,123 +4,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appartamento Turistico</title>
+    <title>Via Verdi 19</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="main.css">
-    <link rel="shortcut icon" href="./Immagini sito/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Lavishly+Yours&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
+    <div id="first-view-container">
+        <div id="first-view">
+            <div id="frame">
+                <h1 id="first-title">
+                   -- Via Verdi 19 --
+                </h1>
+                <h2 id="first-subtitle">
+                    La tua casa nel verde
+                </h2>
+            </div>
+            <!-- Canvas element where the Lottie animation will be rendered -->
+            <div id="animation-container">
+                <h2>
+                    Scroll down
+                </h2>
+                <dotlottie-player 
+                    src="https://lottie.host/4211b6db-d1f9-41ab-a9cf-01d08981d880/Fl9hwi6Nkj.lottie" 
+                    background="transparent" 
+                    speed="1" 
+                    style="width: 200px; height: 200px;" loop autoplay></dotlottie-player>
+            </div>
+        </div>
+    </div>
     <header>
         <div id="header-content">
             <div class="logo-container">
-                <img class="logo" src="./Immagini sito/logo.png" alt="cont">
+                <img class="logo" src="./logo.png" alt="cont">
             </div>
+            <div id="weather-container">
+                <div id="weather-icon-container">
+                    <img id="weather-icon" src="" alt="cont">
+                </div>
+                
+                <div id="temp-container">
+                    <h3 id="temp-text">
+                        
+                    </h3>
+                </div>
+            </div>
+            
             <div class="info-wrapper">
                 <div class="info-icons">
-                    <i id="phone-icon" class="fa-solid fa-phone"></i>
-                    <a id="email"
-                        href="mailto:ViaVerdi2021@gmail.com?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email"><i
-                            id="mail-icon" class="fa-regular fa-envelope"></i></a>
-                    <a id="gallery" href="galleria.html">
-                        <i id="gallery-icon" class="fa-regular fa-images"></i>
+                    <img src="./icone/telephone_7044644 (1).png" alt="Numero di telefono" id="phone-icon" class="top-right-icons">
+                    <a id="email" href="mailto:ViaVerdi2021@gmail.com" class="top-right-icons">
+                        <img src="./icone/gmail.png" alt="e-mail" id="mail-icon">
+                    </a>
+                    <a id="gallery" href="galleria.html" class="top-right-icons">
+                        <img src="./icone/apple.png" alt="Galleria" id="gallery-icon"></i>
                     </a>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <div id="slider">
-            <div class="container">
-                <div class="slide">
-                </div>
-                <div class="button-wrapper">
-                    <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
-                    <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        <div id="blurry-background">
+            
+            <div id="slider">
+                <div class="container">
+                    <div class="slide">
+                    </div>
+                    <div class="button-wrapper">
+                        <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div>
-            <button id="tryBtn">
-                Try your code!
-            </button>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
-            <h1 class="random">Hello world</h1>
+
+        <div id="details-container">
+            <div id="details-content">
+                <div id="details-title">
+                    <h1>APPARTAMENTO DI CAMPAGNA</h1>
+                </div>
+                <div id="details-description"> 
+                    <h3>Questo appartamento offre un'esperienza di soggiorno unica in un complesso situato ad Arco ma abbastanza vicino a Riva del Garda. L'appartamento non è solo un luogo dove dormire, ma una vera e propria base per esplorare le meraviglie del territorio. Gli amanti delle attività all'aria aperta apprezzeranno particolarmente il facile accesso a trasporti pubblici, musei e le varie attività disponibili nella zona</h3>   
+                </div>
+
+                <section class="articles">
+                  <article>
+                    <div class="article-wrapper">
+                      <figure>
+                        <img src="https://eh9yb2jeac9.exactdn.com/wp-content/uploads/2020/02/12-via-ferrata-monte-colodri-360gardalife-1200x800.jpg?strip=all&lossy=1&ssl=1" alt="" />
+                      </figure>
+                      <div class="article-body">
+                        <h2>Panorama</h2>
+                        <p>
+                            Rilassati con una vista mozzafiato sulle montagne! Un panorama che ti lascerà senza fiato, perfetto per i                                 tuoi momenti di relax
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                  <article>
+                    <div class="article-wrapper">
+                      <figure>
+                        <img src="https://www.stile.it/wp-content/uploads/2017/12/iStock-635920906-1024x683.jpg" alt="" />
+                      </figure>
+                      <div class="article-body">
+                        <h2>Cucina moderna</h2>
+                        <p>
+                            Per gli amanti della cucina autentica! Prepara deliziosi piatti nella nostra cucina, con tutti i 
+                            comfort di casa tua!
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                  <article>
+                    <div class="article-wrapper">
+                      <figure>
+                        <img src="https://lamadonnina.grupposandonato.it/mediaObject/ospedali/news/la-madonnina-foto-news/aria-condizionata-salute/original/aria-condizionata-salute.jpg" alt="" />
+                      </figure>
+                      <div class="article-body">
+                        <h2>Aria Condizionata</h2>
+                        <p>
+                            Comfort in ogni stagione! Goditi una temperatura perfetta grazie alla nostra aria condizionata.
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                  <article>
+                    <div class="article-wrapper">
+                      <figure>
+                        <img src="https://www.businesstechweekly.com/wp-content/uploads/2023/06/Can-You-Have-WiFi-without-Internet.jpg" alt="" />
+                      </figure>
+                      <div class="article-body">
+                        <h2>Connessione Wi-Fi</h2>
+                        <p>
+                            Rimani connesso ovunque! Naviga, lavora o guarda i tuoi contenuti preferiti con il nostro WiFi ad alta velocità
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                  <article>
+                    <div class="article-wrapper">
+                      <figure>
+                        <img src="https://www.ildenaro.it/wp-content/uploads/2025/03/intrattenimento.webp" alt="" />
+                      </figure>
+                      <div class="article-body">
+                        <h2>Smart Tv</h2>
+                        <p>
+                            Intrattenimento senza limiti! Accedi a Netflix, YouTube e molto altro sulla nostra Smart TV per non perderti mai i tuoi show preferiti.
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </section>
+            </div>
         </div>
     </main>
+    <footer>
+        <div>
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons-lisens" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Dette verk er lisensieret under en <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Navngivelse 4.0 Internasjonal lisens</a>
+            
+        </div>
+    </footer>
     <script>
         import tippy from 'tippy.js';
         import 'tippy.js/dist/tippy.css'; // optional for styling
     </script>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
     <script>
@@ -135,17 +192,19 @@
 
 
         tippy('#gallery-icon', {
-            content: "Galleria Immagini",
+            content: "Galleria",
         });
         tippy('#mail-icon', {
-            content: "Contatto e-Mail",
+            content: "Indirizzo e-Mail",
         });
         tippy('#phone-icon', {
-            content: "Contatto Cellulare",
+            content: "Contatto Telefonico",
         });
+        
     </script>
-    <script src="main.js"></script>
-    <script src="weatherRequest.js"></script>
+    <script src="./jsFiles/scroll.js"></script>
+    <script src="./jsFiles/index.js"></script>
+    <script src="jsFiles/weatherRequest.js"></script>
 </body>
 
 </html>
